@@ -1,2 +1,2 @@
 # odoo-modules
-Odoo modules
+Odoo modules by Sunflower IT
