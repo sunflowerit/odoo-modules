@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+
+  <!-- Disable default "My" filter on sale orders -->
+  <record id="sale.action_orders" model="ir.actions.act_window">
+    <field name="context">{
+      'search_default_my_sale_orders_filter': 0
+    }</field>
+  </record>
+
+  <!-- Disable default "My" filter on quotations -->
+  <record id="sale.action_quotations" model="ir.actions.act_window">
+    <field name="context">{
+      'search_default_my_sale_orders_filter': 0
+    }</field>
+  </record>
+
+</data>
+</openerp>
