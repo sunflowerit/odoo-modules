@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+     <template id="report_invoice_with_hours" inherit_id="account.report_invoice_document">
+
+        <xpath expr="//p[@t-if='o.comment']" position="before">
+            <t t-if="o.partner_id.hour_summary_invoice">
+            <table class="table table-condensed" style="font-size:120%;"><tr><th>Summary Of Hours</th></tr></table>
+                <t t-foreach="o.lines_per_project()" t-as="g">
+                    <table class="table table-striped table-condensed"  style="font-size:90%;">
+                        <tr></tr>
+                        <tr>
+                            <th colspan="12">
+                                <div class="pull-left">
+                                    <div>Project:
+                                        <t t-if="g['category']"><t
+                                                t-esc="g['category'].project_id.name"/>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                                        </t>
+                                        Issue:
+                                        <t t-esc="g['issue']"/>
+                                    </div>
+                                </div>
+                                <div class="pull-right">
+                                    <span class="text-right">State:
+                                        <t t-if="g['stage_id']"><t t-esc="g['stage_id'].state"/></t>
+                                    </span>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>Date</th>
+                            <th>Employee</th>
+                            <th>Work description</th>
+                            <th>Hours</th>
+                            <th>Invoiceable %</th>
+                            <th class="text-right">Invoiceable hours</th>
+                        </tr>
+                        <tr t-foreach="g['lines']" t-as="l">
+                            <td>
+                                <span t-esc="l.date"/>
+                            </td>
+                            <td>
+                                <span t-esc="l.user_id.name"/>
+                            </td>
+                            <td>
+                                <span t-esc="l.name"/>
+                            </td>
+                            <td class="text-right">
+                                <span t-esc="l.unit_amount"/>
+                            </td>
+                            <td class="text-right">
+                                <span t-esc="l.to_invoice.display_name"/>
+                            </td>
+
+                            <td class="text-right">
+                                <span t-esc="l.to_invoice.factor * l.unit_amount / 100.0"/>
+                            </td>
+                        </tr>
+                    </table>
+                </t>
+            </t>
+        </xpath>
+     </template>
+    </data>
+</openerp>
