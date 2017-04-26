@@ -53,7 +53,7 @@
                             </td>
 
                             <td class="text-right">
-                                <span t-esc="l.to_invoice.factor * l.unit_amount / 100.0"/>
+                                 <span t-esc="l.unit_amount - (l.to_invoice.factor/ 100.0 * l.unit_amount) "/>
                             </td>
                         </tr>
                     </table>
