@@ -37,7 +37,6 @@ class AccountInvoice(models.Model):
             group['category'] = category
             group['lines'] = list(lines)
             grouped.append(group)
-        print grouped
 
         for group in grouped:
             # Get the issue name and description from the issue

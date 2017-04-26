@@ -3,8 +3,8 @@
     <data>
      <template id="report_invoice_with_hours" inherit_id="account.report_invoice_document">
 
-        <xpath expr="//p[@t-if='o.comment']" position="before">
-            <t t-if="o.partner_id.hour_summary_invoice">
+        <xpath expr="//p[@t-if='o.fiscal_position.note']" position="after">
+            <t t-if="o.hour_summary_invoice">
             <table class="table table-condensed" style="font-size:120%;"><tr><th>Summary Of Hours</th></tr></table>
                 <t t-foreach="o.lines_per_project()" t-as="g">
                     <table class="table table-striped table-condensed"  style="font-size:90%;">
@@ -29,19 +29,19 @@
                         </tr>
                         <tr>
                             <th>Date</th>
-                            <th>Employee</th>
+                            <t t-if="o.personal_info"><th>Employee</th></t>
                             <th>Work description</th>
                             <th>Hours</th>
-                            <th>Invoiceable %</th>
+                            <th class="text-right">Invoiceable %</th>
                             <th class="text-right">Invoiceable hours</th>
                         </tr>
                         <tr t-foreach="g['lines']" t-as="l">
                             <td>
                                 <span t-esc="l.date"/>
                             </td>
-                            <td>
+                            <t t-if=" o.personal_info"><td>
                                 <span t-esc="l.user_id.name"/>
-                            </td>
+                            </td></t>
                             <td>
                                 <span t-esc="l.name"/>
                             </td>
