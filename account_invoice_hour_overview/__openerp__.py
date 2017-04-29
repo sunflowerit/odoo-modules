@@ -7,6 +7,6 @@
     'website': 'http://www.sunflowerweb.nl',
     'category': 'Sales Management',
     'depends': ['hr_timesheet_invoice'],
-    'data': ['account_invoice_report.xml'],
+    'data': ['account_invoice_report.xml', 'account_invoice_view.xml'],
     'installable': True,
 }

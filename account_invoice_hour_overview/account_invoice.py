@@ -18,6 +18,8 @@ class AccountInvoice(models.Model):
     report_analytic_lines = fields.One2many(comodel_name="hr.analytic.timesheet",
         inverse_name="invoice_id", string="Analytic lines",
         help="The analytic lines coupled to this invoice.")
+    hour_summary_invoice = fields.Boolean(string="Summary of Hours?", default=False)
+    personal_info = fields.Boolean(string="Include Personal Info?", default=False)
 
     @api.multi
     def lines_per_project(self):
