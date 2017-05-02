@@ -15,9 +15,9 @@ class HrAnalyticTimesheet(models.Model):
         return super(HrAnalyticTimesheet, self).write(vals)
 
     @api.multi
-    def unlink(self, vals):
+    def unlink(self):
         self._check_with_context()
-        return super(HrAnalyticTimesheet, self).write(vals)
+        return super(HrAnalyticTimesheet, self).unlink()
 
     def _check(self, cr, uid, ids):
         """ Disable this check """
