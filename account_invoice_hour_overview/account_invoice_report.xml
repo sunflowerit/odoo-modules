@@ -17,12 +17,12 @@
                                                 t-esc="g['category'].project_id.name"/>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
                                         </t>
                                         Issue:
-                                        <t t-esc="g['issue']"/>
+                                        <t t-esc="g['category'].name"/>
                                     </div>
                                 </div>
                                 <div class="pull-right">
                                     <span class="text-right">State:
-                                        <t t-if="g['stage_id']"><t t-esc="g['stage_id'].state"/></t>
+                                        <t t-if="g['category']"><t t-esc="g['category'].stage_id.state"/></t>
                                     </span>
                                 </div>
                             </th>
@@ -51,7 +51,6 @@
                             <td class="text-right">
                                 <span t-esc="l.to_invoice.display_name"/>
                             </td>
-
                             <td class="text-right">
                                  <span t-esc="l.unit_amount - (l.to_invoice.factor/ 100.0 * l.unit_amount) "/>
                             </td>
@@ -60,6 +59,7 @@
                 </t>
             </t>
         </xpath>
+
      </template>
     </data>
 </openerp>

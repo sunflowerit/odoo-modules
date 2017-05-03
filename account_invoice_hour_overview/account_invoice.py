@@ -27,33 +27,12 @@ class AccountInvoice(models.Model):
 
         def grouplines(self, field='issue_id'):
             for key, group in itertools.groupby(
-                    self.sorted(lambda record: record[field]),
+                    self.sorted(lambda record: record[field].id),
                     lambda record: record[field]
             ):
                 yield key, sum(group, self.browse([]))
 
-        lines = self.report_analytic_lines
-        grouped = []
-        for category, lines in grouplines(lines, 'issue_id'):
-            group = {}
-            group['category'] = category
-            group['lines'] = list(lines)
-            grouped.append(group)
+        analytic_lines = self.report_analytic_lines
 
-        for group in grouped:
-            # Get the issue name and description from the issue
-            issue_obj = self.env['project.issue']
-            if group['category']:
-                issue_rec = issue_obj.search([('id', '=', group['category'].id)])
-                issue_rec = issue_rec[0] if len(issue_rec) else False
-            else:
-                issue_rec = False
-            group['issue'] = issue_rec and issue_rec.name or ''
-            group['description'] = issue_rec and issue_rec.description or ''
-            stage = issue_rec and issue_rec.stage_id
-            # the_date = issue_rec and issue_rec.date_deadline or None
-            # keep this for when we will have to use strptime to reprocess the 'the_date' string
-            # group['delivery_date'] = time.strftime("%d %b %Y", the_date) if the_date else 'In afwachting'
-            group['stage_id'] = stage if stage else ''
-
-        return grouped
+        for issue, lines in grouplines(analytic_lines, 'issue_id'):
+            yield {'category': issue, 'lines': lines}
