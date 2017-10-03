@@ -9,5 +9,5 @@
     'depends': ['web_widget_text_markdown', 'project_issue'],
     'data': ['project_issue.xml'],
     'demo': [],
-    'installable': True,
+    'installable': False,
 }

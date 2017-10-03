@@ -10,5 +10,5 @@
         'hr_timesheet_invoice'
     ],
     'data': ['account_invoice_view.xml'],
-    'installable': True,
+    'installable': False,
 }

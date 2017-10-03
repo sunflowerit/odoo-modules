@@ -47,7 +47,7 @@ to customer without problems.
         'sale_report.xml'
     ],
     'demo_xml': [],
-    'installable': True,
+    'installable': False,
     'auto_install': False,
 }
 

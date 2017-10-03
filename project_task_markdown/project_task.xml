@@ -1,5 +1,4 @@
-<openerp>
-    <data>
+<odoo>
         <record id="view_task_form_with_pad" model="ir.ui.view">
             <field name="name">project.task.form.pad</field>
             <field name="model">project.task</field>
@@ -10,5 +9,4 @@
                 </field>
             </field>
         </record>
-    </data>
-</openerp>
+</odoo>

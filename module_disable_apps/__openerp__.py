@@ -17,5 +17,5 @@ Disable apps filter in modules
     'data': [
       'module_view.xml',
     ],
-    'installable': True,
+    'installable': False,
 }
