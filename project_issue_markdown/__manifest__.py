@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Markdown on project issues',
-    'version': '1.0',
+    'version': '10.0.1.0.0',
     'category': 'Project Management',
     'summary': 'This module adds markdown markup to all project issue descriptions.',
     'author': 'Sunflower IT',
@@ -9,5 +9,5 @@
     'depends': ['web_widget_text_markdown', 'project_issue'],
     'data': ['project_issue.xml'],
     'demo': [],
-    'installable': False,
+    'installable': True,
 }
