@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<openerp>
-<data>
+<odoo>
     <!-- Add Boolean field to form view-->
     <record model="ir.ui.view" id="view_invoice_form">
         <field name="name">account.invoice.form.inherit</field>
@@ -9,12 +8,13 @@
         <field name="arch" type="xml">
             <data>
                 <!-- Include checkboxes for whether to include personal info and summary of invoices or not-->
-                <xpath expr="//header/button[@name='action_cancel_draft']" position="after">
-                    <button name="release_timesheet_lines" states="cancel" string="Release timesheet lines" type="object" groups="account.group_account_manager"/>
+                <xpath expr="//header/button[@name='action_cancel_draft']"
+                       position="after">
+                    <button name="release_timesheet_lines" states="cancel"
+                            string="Release timesheet lines" type="object"
+                            groups="account.group_account_manager"/>
                 </xpath>
             </data>
         </field>
     </record>
-
-</data>
-</openerp>
+</odoo>
