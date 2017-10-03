@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<openerp>
-<data>
+<odoo>
     <!-- Add Boolean field to form view-->
     <record model="ir.ui.view" id="view_invoice_form">
         <field name="name">account.invoice.form.inherit</field>
@@ -16,6 +15,4 @@
             </data>
         </field>
     </record>
-
-</data>
-</openerp>
+</odoo>
