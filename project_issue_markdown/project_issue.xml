@@ -1,14 +1,12 @@
-<openerp>
-    <data>
-        <record id="view_issue_form_with_pad" model="ir.ui.view">
-            <field name="name">project.issue.form.pad</field>
-            <field name="model">project.issue</field>
-            <field name="inherit_id" ref="project_issue.project_issue_form_view"/>
-            <field name="arch" type="xml">
-                <field name="description" position="attributes">
-                    <attribute name="widget">bootstrap_markdown</attribute>
-                </field>
+<odoo>
+    <record id="view_issue_form_with_pad" model="ir.ui.view">
+        <field name="name">project.issue.form.pad</field>
+        <field name="model">project.issue</field>
+        <field name="inherit_id" ref="project_issue.project_issue_form_view"/>
+        <field name="arch" type="xml">
+            <field name="description" position="attributes">
+                <attribute name="widget">bootstrap_markdown</attribute>
             </field>
-        </record>
-    </data>
-</openerp>
+        </field>
+    </record>
+</odoo>
