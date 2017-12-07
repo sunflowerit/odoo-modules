@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # coding: utf-8
 {
     'name': 'Invoice no attachment use',
