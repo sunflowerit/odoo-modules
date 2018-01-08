@@ -27,8 +27,9 @@ class AccountInvoice(models.Model):
 
         def grouplines(self, field='issue_id'):
             for key, group in itertools.groupby(
-                    self.sorted(lambda record: record[field].id),
-                    lambda record: record[field]
+                self.sorted(lambda record: '%07d-%s' % 
+                    (record[field].id, record.date)),
+                lambda record: record[field]
             ):
                 yield key, sum(group, self.browse([]))
 
