@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        <record id="support_branding.config_parameter_company_name" model="ir.config_parameter">
+            <field name="value">Sunflower IT</field>
+        </record>
+        <record id="support_branding.config_parameter_company_url" model="ir.config_parameter">
+            <field name="value">https://sunflowerweb.nl</field>
+        </record>
+        <record id="support_branding.config_parameter_company_color" model="ir.config_parameter">
+            <field name="value">#b163a3</field>
+        </record>
+        <record id="support_branding.config_parameter_support_email" model="ir.config_parameter">
+             <field name="value">helpdesk@sunflowerweb.nl</field>
+        </record>
+        <record id="support_branding.config_parameter_release" model="ir.config_parameter">
+            <field name="value">8.0</field>
+        </record>
+    </data>
+</openerp>
