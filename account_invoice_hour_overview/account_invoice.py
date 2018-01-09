@@ -1,16 +1,11 @@
-# -*- coding: utf-8 -*-
+# coding: utf-8
 # © 2017 Sunflower IT (http://sunflowerweb.nl)
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
-from itertools import groupby
-import time
-from datetime import datetime as dt
-
-from openerp import fields, models, api, _
-import openerp.addons.decimal_precision as dp
 import itertools
-import pprint
-pp = pprint.PrettyPrinter(indent=4)
+
+from openerp import fields, models, api
+
 
 class AccountInvoice(models.Model):
     _inherit = 'account.invoice'
@@ -27,7 +22,7 @@ class AccountInvoice(models.Model):
 
         def grouplines(self, field='issue_id'):
             for key, group in itertools.groupby(
-                self.sorted(lambda record: '%07d-%s' % 
+                self.sorted(lambda record: '%07d-%s' %
                     (record[field].id, record.date)),
                 lambda record: record[field]
             ):

@@ -1,9 +1,9 @@
-# -*- encoding: utf-8 -*-
+# coding: utf-8
 {
     'name': 'Timesheet invoice release - sheet addition',
     'version': '8.0.1.0.0',
     'summary': 'Release timesheet lines after invoice was cancelled',
-    'author': 'Sunflower IT',  
+    'author': 'Sunflower IT',
     'website': 'http://www.sunflowerweb.nl',
     'category': 'Sales Management',
     'depends': [

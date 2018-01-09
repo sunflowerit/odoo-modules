@@ -1,7 +1,7 @@
-# -*- coding: utf-8 -*-
+# coding: utf-8
 {
     'name': 'Markdown on project tasks',
-    'version': '1.0',
+    'version': '8.0.8.0.0',
     'category': 'Project Management',
     'summary': 'This module adds markdown markup to all project task descriptions.',
     'author': 'Sunflower IT',

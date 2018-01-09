@@ -22,23 +22,12 @@
 {
     'sequence': 500,
     "name" : "Sale Order Price Review",
-    "version" : "1.2",
+    "version" : "8.0.8.0.0",
     "author" : "Sunflower IT",
     "category": 'Sales Management',
     'complexity': "normal",
-    "description": """
-Review sale order line prices
-=============================
-
-This module allows to defer setting price for a sales order line to directly before invoicing.
-So after confirmation.
-To use this feature, you need to set a sale order to the "Review prices" state.
-In that state, the prices can be edited.
-Also, any printout of the sales order in that state will not contain any pricing, so can be sent
-to customer without problems.
-
-    """,
     'website': 'http://sunflowerweb.nl',
+    'summary': 'Review sale order price',
     "depends" : ["sale"],
     'init_xml': [],
     'data': [
@@ -50,5 +39,3 @@ to customer without problems.
     'installable': True,
     'auto_install': False,
 }
-
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
