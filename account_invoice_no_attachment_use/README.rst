@@ -2,12 +2,11 @@
    :target: https://www.gnu.org/licenses/agpl
    :alt: License: AGPL-3
 
-==============
-{module_title}
-==============
+=================================
+account invoice no attachment use
+=================================
 
-This module extends the functionality of ... to support ...
-and to allow you to ...
+TODO
 
 Installation
 ============

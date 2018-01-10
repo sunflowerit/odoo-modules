@@ -2,19 +2,16 @@
    :target: https://www.gnu.org/licenses/agpl
    :alt: License: AGPL-3
 
-==============
-{module_title}
-==============
+=====================
+project task markdown
+=====================
 
-This module extends the functionality of ... to support ...
-and to allow you to ...
+TODO
 
 Installation
 ============
 
-To install this module, you need to:
-
-#. Do this ...
+TODO
 
 Configuration
 =============

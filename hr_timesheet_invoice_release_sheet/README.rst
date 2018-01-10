@@ -2,9 +2,9 @@
    :target: https://www.gnu.org/licenses/agpl
    :alt: License: AGPL-3
 
-==============
-{module_title}
-==============
+==================================
+hr timesheet invoice release sheet
+==================================
 
 This module extends the functionality of ... to support ...
 and to allow you to ...
@@ -12,20 +12,12 @@ and to allow you to ...
 Installation
 ============
 
-To install this module, you need to:
-
-#. Do this ...
+TODO
 
 Configuration
 =============
 
-To configure this module, you need to:
-
-#. Go to ...
-
-.. figure:: path/to/local/image.png
-   :alt: alternative description
-   :width: 600 px
+TODO
 
 Usage
 =====
