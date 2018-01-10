@@ -1,7 +1,7 @@
-﻿# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 {
     'name': 'Testserver',
-    'version': '8.0.8.0.0',
+    'version': '8.0.1.0.0',
     'summary': 'Testserver',
     'author': 'Sunflower IT',
     'website': 'http://sunflowerweb.nl',
