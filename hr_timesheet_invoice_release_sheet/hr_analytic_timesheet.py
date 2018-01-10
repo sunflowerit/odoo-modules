@@ -15,7 +15,7 @@ class HrAnalyticTimesheet(models.Model):
         return super(HrAnalyticTimesheet, self).write(vals)
 
     @api.multi
-    def unlink(self):
+    def unlink(self, cr, uid, ids):
         self._check_with_context()
         return super(HrAnalyticTimesheet, self).unlink()
 
