@@ -1,4 +1,4 @@
-# coding: utf-8
+# -*- coding: utf-8 -*-
 # © 2017 Sunflower IT (http://sunflowerweb.nl)
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
@@ -8,6 +8,8 @@ from openerp import fields, models, api
 
 
 class AccountInvoice(models.Model):
+
+
     _inherit = 'account.invoice'
 
     report_analytic_lines = fields.One2many(comodel_name="hr.analytic.timesheet",
@@ -22,9 +24,8 @@ class AccountInvoice(models.Model):
 
         def grouplines(self, field='issue_id'):
             for key, group in itertools.groupby(
-                self.sorted(lambda record: '%07d-%s' %
-                    (record[field].id, record.date)),
-                lambda record: record[field]
+                    self.sorted(lambda record: record[field].id),
+                    lambda record: record[field]
             ):
                 yield key, sum(group, self.browse([]))
 

@@ -5,29 +5,9 @@
 
         <xpath expr="//p[@t-if='o.fiscal_position.note']" position="after">
             <t t-if="o.hour_summary_invoice">
-                <style>
-                    table.summary-of-hours > tbody > tr > th:nth-child(1), 
-                    table.summary-of-hours > tbody > tr > td:nth-child(1) {
-                        width: 100px;
-                    }
-                    table.summary-of-hours > tbody > tr > th:nth-child(3), 
-                    table.summary-of-hours > tbody > tr > td:nth-child(3) {
-                        width: 100px; text-align:right;
-                    }
-                    table.summary-of-hours > tbody > tr > th:nth-child(4), 
-                    table.summary-of-hours > tbody > tr > td:nth-child(4) {
-                        width: 100px; text-align: right;
-                    }
-                    table.summary-of-hours > tbody > tr > th:nth-child(5), 
-                    table.summary-of-hours > tbody > tr > td:nth-child(5) {
-                        width: 150px; text-align: right;
-                    }
-                </style>
-                <table class="table table-condensed" style="font-size:120%;">
-                    <tr><th>Summary Of Hours</th></tr>
-                </table>
+            <table class="table table-condensed" style="font-size:120%;"><tr><th>Summary Of Hours</th></tr></table>
                 <t t-foreach="o.lines_per_project()" t-as="g">
-                    <table class="table table-striped table-condensed summary-of-hours" style="font-size:90%;">
+                    <table class="table table-striped table-condensed"  style="font-size:90%;">
                         <tr></tr>
                         <tr>
                             <th colspan="12">

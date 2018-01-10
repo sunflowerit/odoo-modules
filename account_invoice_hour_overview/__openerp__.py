@@ -1,4 +1,4 @@
-# coding: utf-8
+# -*- coding: utf-8 -*-
 {
     'name': 'Hour overview in invoice',
     'version': '8.0.8.0.0',
