@@ -1,4 +1,4 @@
-# -*- encoding: utf-8 -*-
+# -*- coding: utf-8 -*-
 {
     'name': 'Account Disable Attachment Use',
     'version': '8.0.1.0.0',
