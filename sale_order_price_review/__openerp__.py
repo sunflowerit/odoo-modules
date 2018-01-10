@@ -22,7 +22,7 @@
 {
     'sequence': 500,
     "name" : "Sale Order Price Review",
-    "version" : "8.0.8.0.0",
+    "version" : "8.0.1.2.0",
     "author" : "Sunflower IT",
     "category": 'Sales Management',
     'complexity': "normal",
