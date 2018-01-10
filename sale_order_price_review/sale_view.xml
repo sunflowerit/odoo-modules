@@ -11,8 +11,8 @@
 
                 <!-- add buttons to go to, and return from, 'reprice' state -->
                 <button name="action_cancel" position="after">
-                    <button name="button_reprice" states="manual" icon="gtk-convert" groups="base.group_sale_salesman,base.group_sale_manager"/>
-                    <button name="button_reconfirm" states="reprice" icon="gtk-convert" groups="base.group_sale_salesman,base.group_sale_manager"/>
+                    <button name="button_reprice" states="manual" string="Review prices" icon="gtk-convert" groups="base.group_sale_salesman,base.group_sale_manager"/>
+                    <button name="button_reconfirm" states="reprice" string="Reconfirm" icon="gtk-convert" groups="base.group_sale_salesman,base.group_sale_manager"/>
                 </button>
 
                 <!-- hide regular order line view for 'reprice' state -->
