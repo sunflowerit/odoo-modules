@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
+<openerp>
+<data>
 
   <!-- Disable default "Apps" filter on module list -->
   <record id="base.open_module_tree" model="ir.actions.act_window">
@@ -7,4 +8,6 @@
       'search_default_app': False
     }</field>
   </record>
-</odoo>
+
+</data>
+</openerp>
