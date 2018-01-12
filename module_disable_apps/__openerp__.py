@@ -1,6 +1,6 @@
 ﻿{
     'name': 'Module disable Apps',
-    'version': '10.0.1.0.0',
+    'version': '8.0',
     'summary': 'Disable Apps filter in modules',
     'description': """
 
