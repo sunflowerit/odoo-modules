@@ -3,7 +3,7 @@
    :alt: License: AGPL-3
 
 ======================
-project issue markdown
+project issue 
 ======================
 
 TODO.
