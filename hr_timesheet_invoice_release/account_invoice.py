@@ -2,8 +2,7 @@
 # © 2017 Sunflower IT (http://sunflowerweb.nl)
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
-from openerp import fields, models, api, _
-from openerp.exceptions import Warning
+from openerp import  models, api
 
 
 class AccountInvoice(models.Model):

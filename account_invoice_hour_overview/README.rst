@@ -2,12 +2,11 @@
    :target: https://www.gnu.org/licenses/agpl
    :alt: License: AGPL-3
 
-============================
-hr timesheet invoice release
-============================
+===========================
+Account Invoice Hour Review
+===========================
 
-This module extends the functionality of ... to support ...
-and to allow you to ...
+TODO
 
 Installation
 ============
@@ -19,23 +18,23 @@ Configuration
 
 TODO
 
+.. figure:: path/to/local/image.png
+   :alt: alternative description
+   :width: 600 px
+
 Usage
 =====
-
 TODO
 
 Known issues / Roadmap
 ======================
 
-* ...
+TODO
 
 Bug Tracker
 ===========
 
-Bugs are tracked on `GitHub Issues
-<https://github.com/OCA/{project_repo}/issues>`_. In case of trouble, please
-check there if your issue has already been reported. If you spotted it first,
-help us smash it by providing detailed and welcomed feedback.
+TODO
 
 Credits
 =======
@@ -48,18 +47,12 @@ Images
 Contributors
 ------------
 
-* Firstname Lastname <email.address@example.org> (optional company website url)
-* Second Person <second.person@example.org> (optional company website url)
-
-Do not contact contributors directly about support or help with technical issues.
+TODO
 
 Funders
 -------
 
-The development of this module has been financially supported by:
-
-* Company 1 name
-* Company 2 name
+TODO
 
 Maintainer
 ----------

@@ -2,12 +2,11 @@
    :target: https://www.gnu.org/licenses/agpl
    :alt: License: AGPL-3
 
-============================
-hr timesheet invoice release
-============================
+==============
+test server
+==============
 
-This module extends the functionality of ... to support ...
-and to allow you to ...
+TODO
 
 Installation
 ============
@@ -17,12 +16,27 @@ TODO
 Configuration
 =============
 
-TODO
+To configure this module, you need to:
+
+#. Go to ...
+
+.. figure:: path/to/local/image.png
+   :alt: alternative description
+   :width: 600 px
 
 Usage
 =====
 
-TODO
+To use this module, you need to:
+
+#. Go to ...
+
+.. image:: https://odoo-community.org/website/image/ir.attachment/5784_f2813bd/datas
+   :alt: Try me on Runbot
+   :target: https://runbot.odoo-community.org/runbot/{repo_id}/{branch}
+
+.. repo_id is available in https://github.com/OCA/maintainer-tools/blob/master/tools/repos_with_ids.txt
+.. branch is "8.0" for example
 
 Known issues / Roadmap
 ======================

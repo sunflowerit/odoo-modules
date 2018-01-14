@@ -2,32 +2,17 @@
    :target: https://www.gnu.org/licenses/agpl
    :alt: License: AGPL-3
 
-============================
-hr timesheet invoice release
-============================
+==================
+module disable app
+==================
 
-This module extends the functionality of ... to support ...
-and to allow you to ...
-
+This module allow you to disable "app" filter when installing new module
 Installation
 ============
 
-TODO
+Just Install
 
-Configuration
-=============
 
-TODO
-
-Usage
-=====
-
-TODO
-
-Known issues / Roadmap
-======================
-
-* ...
 
 Bug Tracker
 ===========

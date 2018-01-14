@@ -2,17 +2,14 @@
 # © 2017 Sunflower IT (http://sunflowerweb.nl)
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
-from itertools import groupby
-import time
-from datetime import datetime as dt
-
-from openerp import fields, models, api, _
-import openerp.addons.decimal_precision as dp
 import itertools
-import pprint
-pp = pprint.PrettyPrinter(indent=4)
+
+from openerp import fields, models, api
+
 
 class AccountInvoice(models.Model):
+
+
     _inherit = 'account.invoice'
 
     report_analytic_lines = fields.One2many(comodel_name="hr.analytic.timesheet",

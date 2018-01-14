@@ -1,4 +1,4 @@
-# -*- encoding: utf-8 -*-
+# -*- coding: utf-8 -*-
 {
     'name': 'Support Branding Sunflower IT',
     'version': '8.0.1.0.0',

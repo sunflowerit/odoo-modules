@@ -2,7 +2,7 @@
 # © 2017 Sunflower IT (http://sunflowerweb.nl)
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
-from openerp import fields, models, api, _
+from openerp import models, api, _
 from openerp.exceptions import Warning as UserError
 
 
@@ -15,11 +15,11 @@ class HrAnalyticTimesheet(models.Model):
         return super(HrAnalyticTimesheet, self).write(vals)
 
     @api.multi
-    def unlink(self):
+    def unlink(self, cr, uid, ids):
         self._check_with_context()
         return super(HrAnalyticTimesheet, self).unlink()
 
-    def _check(self, cr, uid, ids):
+    def _check(self):
         """ Disable this check """
         return True
 
@@ -30,7 +30,6 @@ class HrAnalyticTimesheet(models.Model):
             return True
         for att in self:
             if att.sheet_id and att.sheet_id.state not in ('draft', 'new'):
-                raise UserError(_('Error!'), _('You cannot modify an entry in a confirmed timesheet.'))
+                raise UserError(_('Error!'),
+                                _('You cannot modify an entry in a confirmed timesheet.'))
         return True
-
-

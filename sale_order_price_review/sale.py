@@ -19,20 +19,26 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
- 
-from openerp import models, fields, _
-from openerp.exceptions import Warning
 
-class sale_order(models.Model):
+from openerp import models, fields, _
+from openerp.exceptions import Warning as UserError
+
+
+class SaleOrder(models.Model):
     _inherit = 'sale.order'
 
     state = fields.Selection(selection_add=[('reprice', 'Review pricing')])
-    order_line_reprice = fields.One2many('sale.order.line', 'order_id', 'Order Lines', readonly=True, states={'draft': [('readonly', False)], 'reprice': [('readonly', False)], 'sent': [('readonly', False)]}, copy=True)
+    order_line_reprice = fields.One2many('sale.order.line', 'order_id', 'Order Lines',
+                                         readonly=True, states={'draft': [('readonly', False)],
+                                                               'reprice': [('readonly', False)],
+                                                               'sent': [('readonly', False)]},
+                                                               copy=True)
 
-    def allow_reprice(self, cr, uid, ids, context=None):
-        for order in self.browse(cr, uid, ids, context):
+    def allow_reprice(self):
+        for order in self.browse():
             if order.invoice_ids:
-                raise Warning(_('You cannot edit prices for this Sale Order, because invoice %s has been generated.') % (inv.name,))
+                raise UserError(_('You cannot edit prices for this Sale Order,'
+                                ' because invoice %s has been generated.') % (order.name,))
         return True
 
     def action_reprice(self):
@@ -48,9 +54,7 @@ class sale_order(models.Model):
             line.state = 'confirmed'
 
 
-class sale_order_line(models.Model):
+class SaleOrderLine(models.Model):
     _inherit = 'sale.order.line'
 
     price_tbd = fields.Boolean('TBD')
-
-
