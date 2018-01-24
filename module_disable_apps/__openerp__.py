@@ -1,6 +1,6 @@
 ﻿{
     'name': 'Module disable Apps',
-    'version': '8.0',
+    'version': '9.0.1.0.0',
     'summary': 'Disable Apps filter in modules',
     'description': """
 
@@ -17,5 +17,5 @@ Disable apps filter in modules
     'data': [
       'module_view.xml',
     ],
-    'installable': False,
+    'installable': True,
 }
