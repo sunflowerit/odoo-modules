@@ -1,9 +1,9 @@
 @charset "utf-8";
-.odoo .customer_asset_kanban_left {
+.openerp .customer_asset_kanban_left {
     display: inline-block;
 }
 
-.odoo .customer_asset_type_kanban_left {
+.openerp .customer_asset_type_kanban_left {
     display: inline-block;
 }
 
