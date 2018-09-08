@@ -1,4 +1,4 @@
-openerp.float_time_seconds = function(instance){
+odoo.float_time_seconds = function(instance){
 
     original_format_value = instance.web.format_value;
     instance.web.format_value = function (value, descriptor, value_if_empty) {
