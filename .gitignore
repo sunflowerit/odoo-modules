@@ -87,3 +87,9 @@ ENV/
 
 # Rope project settings
 .ropeproject
+<<<<<<< Updated upstream
+=======
+
+#idea files
+/.idea
+>>>>>>> Stashed changes
