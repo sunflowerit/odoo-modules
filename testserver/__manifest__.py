@@ -8,7 +8,7 @@
     'website': 'http://sunflowerweb.nl',
     'category': 'Specific Industry Applications',
     'sequence': 0,
-    'depends': ['base', 'web'],
+    'depends': ['web'],
     'data': [
         'views/assets.xml',
     ],

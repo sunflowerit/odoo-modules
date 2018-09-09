@@ -13,7 +13,7 @@
 
 .o_sub_menu_logo {
     background-image: url('/testserver/static/src/img/testserver.jpg') !important;
-    background-size: cover !important;
+    background-size: contain !important;
 }
 
 .o_sub_menu_logo img {
