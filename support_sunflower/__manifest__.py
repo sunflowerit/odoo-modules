@@ -9,7 +9,7 @@
     'website': 'http://sunflowerweb.nl/',
     'depends': ['support_branding'],
     'data': [
-        'views/support_branding_data.xml',
+        'data/support_branding_data.xml',
     ],
     'installable': True
 }
