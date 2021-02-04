@@ -11,7 +11,7 @@
             <field name="value">#b163a3</field>
         </record>
         <record id="support_branding.config_parameter_support_email" model="ir.config_parameter">
-             <field name="value">helpdesk@sunflowerweb.nl</field>
+             <field name="value">info@sunflowerweb.nl</field>
         </record>
         <record id="support_branding.config_parameter_release" model="ir.config_parameter">
             <field name="value">10.0</field>
